@@ -1,0 +1,43 @@
+.cell-status{
+    display:grid;
+    place-items: center;
+  border-inline-start: 1px solid var(--border-subtle);
+  padding: 0.75rem;
+}
+
+.status-badge{
+    width: 100%;
+    padding: 7px 12px;
+    border-radius: 8px;
+    font-size:0.75rem;
+    font-weight:700;
+    cursor:pointer;
+    text-align:center;
+    transition: transform 0.15s ease, filter 0.15s ease;
+    user-select:none;
+}
+
+.status-badge:hover{
+    filter:brightness(1.15);
+    transform: translatey(-1px);
+}
+
+.badge-confirmed{
+    background-color:var(--status-confirmed-bg);
+    color: var(--status-confirmed-text);
+    border: 1px solid var(--status-confirmed-border);
+    box-shadow: 0 2px 8px rgba(52, 211, 153, 0.15);
+}
+
+.badge-draft{
+    background-color: var(--status-draft-bg);
+  color: var(--status-draft-text);
+  border: 1px solid var(--status-draft-border);
+  box-shadow: 0 2px 8px rgba(251, 191, 36, 0.15);
+}
+
+.badge-untranslated {
+  background-color: var(--status-untranslated-bg);
+  color: var(--status-untranslated-text);
+  border: 1px solid var(--status-untranslated-border);
+}

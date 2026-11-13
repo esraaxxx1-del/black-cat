@@ -1,0 +1,46 @@
+:root {
+  --bg-app-start: #0f0f14;
+  --bg-app-end: #07070a;
+  --bg-surface: #141416;
+  --bg-surface-elevated: #1b1b24;
+  --bg-row-active: #222230;
+  --bg-input: #0b0b10;
+
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  --border-subtle: #272735;
+  --border-focus: #a78bfa;
+
+  --status-confirmed-bg: #065f46;
+  --status-confirmed-text: #34d399;
+  --status-confirmed-border: #059669;
+
+  --status-draft-bg: #78350f;
+  --status-draft-text: #fbbf24;
+  --status-draft-border: #d97706;
+
+  --status-untranslated-bg: #1e1e2d;
+  --status-untranslated-text: #94a3b8;
+  --status-untranslated-border: #334155;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin:0;
+    padding:0; }
+     
+    body{
+        background: linear-gradient( 135deg, var(--bg-app-start), var(--bg-app-end));
+        color: var(--text-primary);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "segoe UI", Roboto, sans-serif;
+        min-height: 100vh;  
+    }
+
+    .black-cat-app{
+        max-width:1280px;
+        margin:0 auto;
+        padding:2rem 1.25rem;
+    }

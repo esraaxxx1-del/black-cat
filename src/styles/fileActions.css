@@ -1,0 +1,43 @@
+.action-buttons-container {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.btn-import, .btn-export {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-import {
+  background-color: #000203;
+  color: #ffffff;
+}
+
+.btn-import:hover {
+  background-color: #475569;
+}
+
+.btn-export {
+  background-color: #a855f7;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(168, 85, 247, 0.3);
+}
+
+.btn-export:hover {
+  background-color: #9333ea;
+  transform: translateY(-2px);
+}
+
+.hidden-input {
+  display: none;
+}
